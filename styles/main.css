@@ -1,15 +1,25 @@
+/*////////////////////////////////////////////////////////////// FONTS */
 /* font-family: 'Lato', sans-serif;
 font-family: 'Oswald', sans-serif;
 font-family: 'Playfair Display', serif; */
 
+:root {
+    --background-color: rgb(244,244,244);
+    --inner-box-color: rgb(255, 255, 255);
+    --nav-background: rgb(248,248,248);
+    --nav-border: rgb(231,231,231);
+    --nav-text: rgb(110,110,110);
+}
+
+
+
+/*////////////////////////////////////////////////////////////// GLOBAL */
 * {
     box-sizing: border-box;
-    overflow-wrap: break-word;
-    word-break: break-all;
   }
 body {
     text-align: center;
-    font-family: Helvetica, arial, sans-serif;
+    font-family: 'Lato', Helvetica, arial, sans-serif;
     background-color: rgb(244,244,244);
 }
 img {
@@ -19,16 +29,16 @@ ul {
     padding: 0;
     list-style: none;
 }
+/*////////////////////////////////////////////////////////////// NAV BAR */
+
 header {
  padding: 0;
 }
 nav {
-    font-family: 'Lato', sans-serif;
     color: rgb(110,110,110);
     text-transform: uppercase;
     font-size: 0.7rem;
     display:flex;
-    border-bottom: 1px solid red;
     min-height: 63px;
     justify-content: space-between;
     background-color: rgb(248,248,248);
@@ -38,37 +48,137 @@ nav {
 nav ul:first-of-type  {
     display: flex;
     align-items: center;
-    /* flex: 5; */
     padding-left: 150px;
 }
 nav ul:last-of-type {
     display:flex;
+    justify-content: space-around;
     align-items: center;
-    padding-right: 124px;
+    width: 285px;
+    padding-right: 110px;
+    font-size: 0.83rem;
 }
 .word-menu li {
     padding-right: 24px;
-    letter-spacing: 1px;
+    letter-spacing: 0.87px;
 }
+.fas {
+    margin-left: 2px;
+    margin-bottom: 1px;
+}
+
 .symbols li {
-    padding-left: 16px;
+    flex: 1;
 }
+
 .symbols li:last-of-type {
-    padding-left: 21px;
-}
+    flex: 1.5;
+} 
+/*////////////////////////////////////////////////////////////// MAIN SECTION */
+
 wrapper {
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 49px;
 }
 main {
     flex: 2;
     max-width: 750px;
     margin-right: 20px;
-    margin-left: 25px;
+    margin-left: 28px;
 }
 .sidebar {
     flex:1;
     max-width: 360px;
     margin-left: 10px;
+}
+main img {
+    object-fit: cover;
+    height: 473px;
+}
+
+.sidebar {
+    object-fit: cover;
+    height: 507px;
+}
+/*////////////////////////////////////////////////////////////// ARTICLES */
+
+article {
+    background:rgb(255,255,255);
+}
+.article-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    padding-bottom: 21px;
+    border-top: 1px black solid;
+}
+.article-footer ul {
+    display: flex;
+}
+
+article h2 {
+    font-size: 0.7rem;
+    margin-top: 43px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+article h3 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    margin-top: 13px;
+    letter-spacing: 1px;
+}
+
+article p {
+    margin: 24px 40px;
+    line-height: 25px;
+    font-weight: 400;
+    letter-spacing: -0.09px;
+    font-size: 0.95em;
+    text-align: left;
+}
+
+button {
+    margin-top: 11px;
+    padding: 10px 17px;
+    text-transform: uppercase;
+    font-size: 0.79rem;
+    letter-spacing: 0.6px;
+    border-radius: 1px;
+}
+
+.article-footer p {
+        font-size: 0.85rem;
+        font-style: italic;
+        letter-spacing: 0.19px;
+        margin: 15px 40px;
+}
+.article-footer ul {
+    margin: 22px 40px;
+    width: 139px;
+    justify-content: space-between;
+}
+
+/*////////////////////////////////////////////////////////////////////////// TOP PROFILE PIC */
+
+.top {
+    background: var(--inner-box-color);
+    position: relative;
+}
+.top img:first-of-type {
+    object-fit: cover;
+    height: 183px;
+}
+
+.top img:last-of-type {
+    border-radius: 50%;
+    position: absolute;
+    top: 99px;
+    left: 89px;
+    width: 51%;
+    border: solid 8px var(--inner-box-color);
+    /* border-color: var(--inner-box-color); */
+    
 }
