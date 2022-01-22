@@ -101,11 +101,19 @@ main img {
     object-fit: cover;
     height: 473px;
 }
-/* 
-.sidebar {
-    object-fit: cover;
-    height: 507px;
-} */
+ 
+.sidebar h2 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.15rem;
+    letter-spacing: 0.06ch;
+    font-weight: 400;
+    color: var(--sidebar);
+}
+
+.top, .popular-posts {
+    background: var(--inner-box-color);
+}
 /*////////////////////////////////////////////////////////////// ARTICLES */
 
 article {
@@ -170,7 +178,7 @@ button {
 /*////////////////////////////////////////////////////////////////////////// TOP PROFILE PIC */
 
 .top {
-    background: var(--inner-box-color);
+    /* background: var(--inner-box-color); */
     position: relative;
 }
 .top img:first-of-type {
@@ -191,12 +199,6 @@ button {
 
 .top h2 {
     margin-top: 106px;
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    font-size: 1.15rem;
-    letter-spacing: 0.06ch;
-    font-weight: 400;
-    color: var(--sidebar);
 }
 
 .top p {
@@ -218,5 +220,46 @@ button {
     width: 30px;
     padding: 6px;
     font-size: 0.8rem;
-
 }
+
+/*////////////////////////////////////////////////////////////////////POPULAR POSTS */
+
+.popular-posts {
+    margin: 39px 0;
+    padding: 0 30px;
+}
+.popular-posts h2{
+    letter-spacing: 0.09ch;
+    padding-top: 33px;
+    padding-bottom: 13px;
+}
+.popular-posts img {
+    object-fit: cover;
+    height: 200px;
+    padding: 0 0 0 0;
+}
+.popular-posts figcaption {
+    padding: 14px 0;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-size: 0.83rem;
+    letter-spacing: 1.25px;
+    font-weight: 400;
+    color: var(--sidebar);
+    text-align: left;
+    word-spacing: -1px;
+}
+.popular-posts p {
+    font-size: 0.85rem;
+    font-style: italic;
+    letter-spacing: 0.19px;
+    text-align: left;
+    margin: 0;
+    border-bottom: 1px solid var(--nav-border);
+    color: rgb(119,119,119);
+    padding-bottom: 17px;
+}
+.post {
+    padding-bottom: 20px;
+}
+/*////////////////////////////////////////////////////////////////////LATEST POSTS
