@@ -171,9 +171,9 @@ button {
     letter-spacing: 0.06ch;
     font-weight: 400;
     color: var(--sidebar);
-    letter-spacing: 0.09ch;
+    /* letter-spacing: 0.09ch; */
     padding-top: 33px;
-    padding-bottom: 5px;
+    padding-bottom: 6px;
 }
 
 .top, .popular-posts, .latest-posts, .instagram-feed {
@@ -208,11 +208,9 @@ button {
     border-radius: 50%;
     position: absolute;
     top: 99px;
-    left: 89px;
+    left: 90px;
     width: 51%;
     border: solid 8px var(--inner-box-color);
-    /* border-color: var(--inner-box-color); */
-    
 }
 
 .top h2 {
@@ -220,7 +218,7 @@ button {
 }
 
 .top p {
-    line-height: 1.69em;
+    line-height: 1.66em;
     margin: 0px 35px;
     font-size: 0.94rem;
 }
@@ -229,27 +227,28 @@ button {
     justify-content: space-evenly;
     margin: 23px 73px;
     padding-right: 11px;
-    padding-bottom: 46px;
+    padding-bottom: 44px;
 }
 
 .top li {
     border: 1px solid var(--nav-border);
-    border-radius: 50%;
     width: 30px;
     padding: 6px;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
+    margin: 1px;
+    border-radius: 50%;
 }
 
 /*////////////////////////////////////////////////////////////////////POPULAR POSTS */
 
 .popular-posts {
-    margin: 39px 0;
+    margin: 40px -1px 40px 1px;
     padding: 0 30px;
 }
 .popular-posts h2{
     letter-spacing: 0.09ch;
     padding-top: 33px;
-    padding-bottom: 13px;
+    padding-bottom: 12px;
 }
 .popular-posts img {
     object-fit: cover;
@@ -258,14 +257,14 @@ button {
 }
 
 .popular-posts p {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     font-style: italic;
-    letter-spacing: 0.19px;
+    letter-spacing: -0.2px;
     text-align: left;
     margin: 0;
     border-bottom: 1px solid var(--nav-border);
     color: rgb(119,119,119);
-    padding-bottom: 17px;
+    padding-bottom: 16px;
 }
 .post {
     padding-bottom: 20px;
@@ -280,6 +279,14 @@ button {
     padding: 11px 0;
 }
 
+.latest-posts h2 {
+    padding-bottom: 4px;
+}
+.latest-posts figcaption  {
+    letter-spacing: 0.7px;
+    word-spacing: 0;
+}
+
 .latest-posts p {
     font-size: 0.85rem;
     font-style: italic;
@@ -288,17 +295,13 @@ button {
     margin: 0;
     border-bottom: 1px solid var(--nav-border);
     color: rgb(119,119,119);
-    padding-bottom: 47px;
-}
-
-.latest-posts .post {
-    display:block;
+    padding-bottom: 46px;
 }
 
 .latest-posts img {
     float: left;
     max-width: 103px;
-    margin: 8px 15px 8px 30px;
+    margin: 8px 15px 8px 0;
     height: 76px;
     object-fit: cover;
 }
@@ -308,8 +311,11 @@ button {
 }
 
 .latest-posts .post {
+    display:block;
     padding-bottom: 0px;
     margin-bottom: 6px;
+    margin-left: 31px;
+    margin-right: 29px;
 }
 
 .latest-posts .post:last-of-type {
@@ -363,8 +369,25 @@ footer {
     margin: 0;
     color: var(--footer-font);
     font-size: 0.88rem;
+    position: relative;
 }
 
 footer p {
     margin: 5px;
+}
+
+.arrow {
+    position: absolute;
+    top:0;
+    right: 1.9vw;
+    background: rgb(87,43,29);
+    color: rgb(101,101,101);
+    border-radius: 5%;
+}
+
+.arrow p {
+    padding: 9px 13px 8px 12px;
+    margin: 0;
+    text-align: center;
+    font-size: 1.15rem;
 }
