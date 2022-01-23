@@ -76,7 +76,7 @@ nav ul:last-of-type {
 .symbols li:last-of-type {
     flex: 1.5;
 } 
-/*////////////////////////////////////////////////////////////// MAIN SECTION */
+/*////////////////////////////////////////////////////////////// MAIN LAYOUT*/
 
 wrapper {
     display: flex;
@@ -86,34 +86,18 @@ wrapper {
 main {
     flex: 2;
     max-width: 750px;
-    margin-right: 20px;
-    margin-left: 28px;
+    margin-right: 2vw;
 }
 .sidebar {
     flex:1;
     max-width: 360px;
-    margin-left: 10px;
-    object-fit: cover;
-    height: 507px;
     color: var(--sidebar);
 }
 main img {
     object-fit: cover;
     height: 473px;
 }
- 
-.sidebar h2 {
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    font-size: 1.15rem;
-    letter-spacing: 0.06ch;
-    font-weight: 400;
-    color: var(--sidebar);
-}
 
-.top, .popular-posts {
-    background: var(--inner-box-color);
-}
 /*////////////////////////////////////////////////////////////// ARTICLES */
 
 article {
@@ -175,6 +159,38 @@ button {
     justify-content: space-between;
 }
 
+/*/////////////////////////////////////////////////////////////////////////GENERAL SIDE DESIGN*/
+
+
+.sidebar h2 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.15rem;
+    letter-spacing: 0.06ch;
+    font-weight: 400;
+    color: var(--sidebar);
+    letter-spacing: 0.09ch;
+    padding-top: 33px;
+    padding-bottom: 5px;
+}
+
+.top, .popular-posts, .latest-posts, .instagram-feed {
+    background: var(--inner-box-color);
+}
+
+
+.sidebar figcaption {
+    padding: 14px 0;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-size: 0.83rem;
+    letter-spacing: 1.25px;
+    font-weight: 400;
+    color: var(--sidebar);
+    text-align: left;
+    word-spacing: -1px;
+}
+
 /*////////////////////////////////////////////////////////////////////////// TOP PROFILE PIC */
 
 .top {
@@ -198,12 +214,12 @@ button {
 }
 
 .top h2 {
-    margin-top: 106px;
+    margin-top: 73px;
 }
 
 .top p {
     line-height: 1.69em;
-    margin: 21px 35px;
+    margin: 0px 35px;
     font-size: 0.94rem;
 }
 
@@ -238,17 +254,7 @@ button {
     height: 200px;
     padding: 0 0 0 0;
 }
-.popular-posts figcaption {
-    padding: 14px 0;
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    font-size: 0.83rem;
-    letter-spacing: 1.25px;
-    font-weight: 400;
-    color: var(--sidebar);
-    text-align: left;
-    word-spacing: -1px;
-}
+
 .popular-posts p {
     font-size: 0.85rem;
     font-style: italic;
@@ -262,4 +268,79 @@ button {
 .post {
     padding-bottom: 20px;
 }
-/*////////////////////////////////////////////////////////////////////LATEST POSTS
+/*////////////////////////////////////////////////////////////////////LATEST POSTS */
+
+.latest-posts {
+    margin: 10px 0;
+}
+
+.latest-posts figcaption:first-of-type {
+    padding: 11px 0;
+}
+
+.latest-posts p {
+    font-size: 0.85rem;
+    font-style: italic;
+    letter-spacing: 0.19px;
+    text-align: left;
+    margin: 0;
+    border-bottom: 1px solid var(--nav-border);
+    color: rgb(119,119,119);
+    padding-bottom: 47px;
+}
+
+.latest-posts .post {
+    display:block;
+}
+
+.latest-posts img {
+    float: left;
+    max-width: 103px;
+    margin: 8px 15px 8px 30px;
+    height: 76px;
+    object-fit: cover;
+}
+
+.latest-posts figcaption {
+    padding: 0px 0;
+}
+
+.latest-posts .post {
+    padding-bottom: 0px;
+    margin-bottom: 6px;
+}
+
+.latest-posts .post:last-of-type {
+    margin-bottom: 50px;
+    padding-bottom: 19px;
+}
+
+/*///////////////////////////////////////////////////////////////////////INSTAGRAM FEED */
+
+.instagram-feed {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: -10px;
+}
+
+.instagram-feed h2 {
+    width: 100%;
+    padding-top: 18px;
+    padding-bottom: 7px;
+}
+
+.photos img{
+    object-fit: cover;
+    width: calc(50% - 18px);
+    margin: 5px;
+    height: 151px;
+}
+
+.photos {
+    width: 90%;
+    padding-bottom: 24px;
+}
+
+/*//////////////////////////////////////////////////////////////////////FOOTER*/
+
