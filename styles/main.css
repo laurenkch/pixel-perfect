@@ -10,6 +10,8 @@ font-family: 'Playfair Display', serif; */
     --nav-border: rgb(231,231,231);
     --nav-text: rgb(110,110,110);
     --sidebar: rgb(68,68,68);
+    --footer-background: rgb(34,34,34);
+    --footer-font: rgb(136,136,136);
 }
 
 
@@ -344,3 +346,25 @@ button {
 
 /*//////////////////////////////////////////////////////////////////////FOOTER*/
 
+.footer {
+    margin-top: 30px;
+    display: flex;
+    flex: 1 1 auto;
+}
+.footer img {
+    object-fit: cover;
+    width: calc(100% / 8);
+    height: 189px;
+}
+
+footer {
+    background: var(--footer-background);
+    padding: 20px;
+    margin: 0;
+    color: var(--footer-font);
+    font-size: 0.88rem;
+}
+
+footer p {
+    margin: 5px;
+}
