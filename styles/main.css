@@ -9,9 +9,10 @@ font-family: 'Playfair Display', serif; */
     --nav-background: rgb(248,248,248);
     --nav-border: rgb(231,231,231);
     --nav-text: rgb(110,110,110);
-    --sidebar: rgb(68,68,68);
+    --text: rgb(68,68,68);
     --footer-background: rgb(34,34,34);
     --footer-font: rgb(136,136,136);
+    --button-accent-color: rgb(237,63, 5);
 }
 
 
@@ -58,8 +59,8 @@ nav ul:last-of-type {
     display:flex;
     justify-content: space-around;
     align-items: center;
-    width: 285px;
-    padding-right: 110px;
+    width: 21.6%;
+    padding-right: 10%;
     font-size: 0.83rem;
 }
 .word-menu li {
@@ -72,11 +73,15 @@ nav ul:last-of-type {
 }
 
 .symbols li {
-    flex: 1;
+    padding: 1px;
+}
+
+.symbols li:nth-child(2) {
+    padding-left: 5px;
 }
 
 .symbols li:last-of-type {
-    flex: 1.5;
+    padding-left: 5px;
 } 
 /*////////////////////////////////////////////////////////////// MAIN LAYOUT*/
 
@@ -89,11 +94,12 @@ main {
     flex: 2;
     max-width: 750px;
     margin-right: 2vw;
+    color: var(--text);
 }
 .sidebar {
     flex:1;
     max-width: 360px;
-    color: var(--sidebar);
+    color: var(--text);
 }
 main img {
     object-fit: cover;
@@ -129,6 +135,8 @@ article h3 {
     text-transform: uppercase;
     margin-top: 13px;
     font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 1px;
 }
 
 article p {
@@ -147,6 +155,13 @@ button {
     font-size: 0.79rem;
     letter-spacing: 0.6px;
     border-radius: 1px;
+    border-color: var(--button-accent-color);
+    color: var(--button-accent-color);
+}
+
+button:hover {
+    color: var(--inner-box-color);
+    background-color: var(--button-accent-color);
 }
 
 .article-footer p {
@@ -168,10 +183,9 @@ button {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     font-size: 1.15rem;
-    letter-spacing: 0.06ch;
+    letter-spacing: 0.07ch;
     font-weight: 400;
-    color: var(--sidebar);
-    /* letter-spacing: 0.09ch; */
+    color: var(--text);
     padding-top: 33px;
     padding-bottom: 6px;
 }
@@ -188,7 +202,7 @@ button {
     font-size: 0.83rem;
     letter-spacing: 1.25px;
     font-weight: 400;
-    color: var(--sidebar);
+    color: var(--text);
     text-align: left;
     word-spacing: -1px;
 }
@@ -308,6 +322,8 @@ button {
 
 .latest-posts figcaption {
     padding: 0px 0;
+    margin-top: 7px;
+    word-spacing: -0.04em;
 }
 
 .latest-posts .post {
