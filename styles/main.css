@@ -48,7 +48,9 @@ nav {
     justify-content: space-between;
     background-color: var(--nav-background);
     border-bottom: 1px solid var(--nav-border);
-
+}
+nav a:hover {
+    font-size: 1.2em;
 }
 nav ul:first-of-type  {
     display: flex;
@@ -175,6 +177,9 @@ button:hover {
     width: 139px;
     justify-content: space-between;
 }
+.article-footer a:hover {
+    color: var(--nav-text);
+}
 
 /*/////////////////////////////////////////////////////////////////////////GENERAL SIDE DESIGN*/
 
@@ -253,6 +258,9 @@ button:hover {
     border-radius: 50%;
 }
 
+.top a:hover {
+    color: var(--nav-text);
+}
 /*////////////////////////////////////////////////////////////////////POPULAR POSTS */
 
 .popular-posts {
