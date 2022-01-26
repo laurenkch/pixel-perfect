@@ -35,6 +35,9 @@ ul {
     list-style: none;
     display: flex;
 }
+a:hover {
+    cursor: pointer;
+}
 /*////////////////////////////////////////////////////////////// NAV BAR */
 
 header {
@@ -51,7 +54,7 @@ nav {
     border-bottom: 1px solid var(--nav-border);
 }
 nav a:hover {
-    font-size: 1.2em;
+    color: var(--button-accent-color);
 }
 nav ul:first-of-type  {
     display: flex;
@@ -71,15 +74,19 @@ nav ul:last-of-type {
     padding-right: 24px;
     letter-spacing: 0.87px;
 }
+.word-menu a:hover {
+    transform: scale(1.2);
+}
 .fas {
     margin-left: 2px;
     margin-bottom: 1px;
 }
-
+.symbols a:hover {
+    transform: scale(1.5);
+}
 .symbols li {
     flex: 1;
 }
-
 .symbols li:nth-child(2) {
     flex: 2;
 }
@@ -159,7 +166,7 @@ article p {
 
 button {
     margin-top: 11px;
-    padding: 10px 17px;
+    padding: 11px 18px;
     text-transform: uppercase;
     font-size: 0.79rem;
     letter-spacing: 0.6px;
@@ -188,7 +195,8 @@ button:hover {
     justify-content: space-between;
 }
 .article-footer a:hover {
-    color: var(--nav-text);
+    color: var(--button-accent-color);
+    transform: scale(1.5);
 }
 
 /*/////////////////////////////////////////////////////////////////////////GENERAL SIDE DESIGN*/
@@ -225,7 +233,6 @@ button:hover {
 /*////////////////////////////////////////////////////////////////////////// TOP PROFILE PIC */
 
 .top {
-    /* background: var(--inner-box-color); */
     position: relative;
 }
 .top img:first-of-type {
@@ -259,7 +266,7 @@ button:hover {
     padding-bottom: 44px;
 }
 
-.top li {
+.icon-btn {
     border: 1px solid var(--nav-border);
     width: 30px;
     padding: 6px;
@@ -268,8 +275,9 @@ button:hover {
     border-radius: 50%;
 }
 
-.top a:hover {
-    color: var(--nav-text);
+.icon-btn:hover {
+    color: var(--inner-box-color);
+    background-color: var(--button-accent-color);
 }
 /*////////////////////////////////////////////////////////////////////POPULAR POSTS */
 
@@ -400,7 +408,7 @@ button:hover {
 footer {
     background: var(--footer-background);
     padding: 20px;
-    margin: 0;
+    margin-top: auto;
     color: var(--footer-font);
     font-size: 0.88rem;
     position: relative;
@@ -410,20 +418,35 @@ footer p {
     margin: 5px;
 }
 
-.arrow {
+.arrow-btn {
     position: absolute;
     top:0;
     right: 1.9vw;
     background: var(--button-accent-color);
     color: rgb(101,101,101);
     border-radius: 5%;
-}
-
-.arrow p {
-    padding: 9px 13px 8px 12px;
-    margin: 0;
+    width: 38px;
+    height: 39px;
     text-align: center;
     font-size: 1.15rem;
+    padding-top: 10px;
+}
+
+.arrow-btn a {
+    color:var(--inner-box-color);
+}
+.arrow-btn a:visited {
+    color:(--inner-box-color);
+}
+.arrow-btn a:active {
+        color:(--inner-box-color);
+}
+.arrow-btn a:hover {
+    color: var(--button-accent-color);
+}
+
+.arrow-btn:hover {
+    background-color: var(--inner-box-color);
 }
 
 /*////////////////////////////////////////////////////////////////////////MOBILE*/
