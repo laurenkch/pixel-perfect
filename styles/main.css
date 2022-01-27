@@ -53,9 +53,21 @@ nav {
     background-color: var(--nav-background);
     border-bottom: 1px solid var(--nav-border);
 }
-nav a:hover {
+
+nav li {
+    transition: all 0.15s ease-in-out;
+}
+
+nav li:hover {
     color: var(--button-accent-color);
 }
+.symbols li:hover {
+    transform: scale(1.5);
+}
+.word-menu li:hover {
+    transform: scale(1.2);
+}
+
 nav ul:first-of-type  {
     display: flex;
     align-items: center;
@@ -74,15 +86,9 @@ nav ul:last-of-type {
     padding-right: 24px;
     letter-spacing: 0.87px;
 }
-.word-menu a:hover {
-    transform: scale(1.2);
-}
 .fas {
     margin-left: 2px;
     margin-bottom: 1px;
-}
-.symbols a:hover {
-    transform: scale(1.5);
 }
 .symbols li {
     flex: 1;
@@ -175,7 +181,8 @@ button {
     color: var(--button-accent-color);
     background: var(--inner-box-color);
     border-width: 1px;
-    border-style:solid
+    border-style:solid;
+    transition: all 0.2s ease-in-out;
 }
 
 button:hover {
@@ -194,7 +201,10 @@ button:hover {
     width: 139px;
     justify-content: space-between;
 }
-.article-footer a:hover {
+.article-footer li {
+    transition: all 0.15s ease-in-out;
+}
+.article-footer li:hover {
     color: var(--button-accent-color);
     transform: scale(1.5);
 }
@@ -273,6 +283,7 @@ button:hover {
     font-size: 0.85rem;
     margin: 1px;
     border-radius: 50%;
+    transition: all 0.15s ease-in-out;
 }
 
 .icon-btn:hover {
@@ -430,6 +441,7 @@ footer p {
     text-align: center;
     font-size: 1.15rem;
     padding-top: 10px;
+    transition: all 0.15s ease-in-out;
 }
 
 .arrow-btn a {
